@@ -1,20 +1,5 @@
 ## Dependencies
 
-Ensure you have the following dependencies installed:
-
-    pandas
-    lancedb
-    openai
-    pydantic
-    instructor
-    tqdm
-    pymupdf4llm
-    python-dotenv
-    fuzzywuzzy
-    langchain
-    langchain_ollama
-    langchain_community
-
 You can install the dependencies using the `requirements_segmentation.txt` file:
 
 `pip install -r requirements_segmentation.txt`
