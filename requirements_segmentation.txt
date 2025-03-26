@@ -1,0 +1,12 @@
+pandas
+lancedb
+openai
+pydantic
+instructor
+tqdm
+pymupdf4llm
+python-dotenv
+fuzzywuzzy
+langchain
+langchain_ollama
+langchain_community
