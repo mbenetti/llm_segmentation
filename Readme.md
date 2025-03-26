@@ -22,9 +22,12 @@ Create a `.env` file in the root directory of the project with the following var
    
 `python 03_segmentation.py`
 
-3. The processed markdown and JSON files will be saved in the `output` folder. This is an intermediate step before the final segmentation based on the llm output
+3. The processed markdown and JSON files will be saved in the `output` folder. This is an intermediate step before the final segmentation based on the llm output.
 
-4. Run the script `01_index_creation_Lance.py` to create the index, and two output files, the langchain documents and an excel file with the chuncks and metadata.
+   <img width="1233" alt="Screenshot 2025-03-26 at 16 00 55" src="https://github.com/user-attachments/assets/5f90d565-b507-4370-a38c-c4753bab6ea3" />
+
+
+5. Run the script `01_index_creation_Lance.py` to create the index, and two output files, the langchain documents and an excel file with the chuncks and metadata.
 
 The metadata is hard coded but it can be modified.
 
