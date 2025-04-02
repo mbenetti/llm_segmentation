@@ -16,7 +16,7 @@ Create a `.env` file in the root directory of the project with the following var
 
 > [!IMPORTANT]
 > You can use your prefered LLM, the code use langchain openai implementation that can be used with almost any LLM. 
-> Make sure your LLM have a context big enogh for the input and output of the query
+> Make sure your LLM have a context big enogh for the input and output of the query. The context windows of an LLM is the imput plus the output tokens.
 
 ## Usage
 
