@@ -10,7 +10,9 @@ Create a `.env` file in the root directory of the project with the following var
 
 `OPENAI_API_KEY="xxx"`
 
-`OPENAI_BASE_URL="http://xxx.com/v1"`
+`OPENAI_BASE_URL="http://Your_prefered_Openai_compatible_LLM.com/v1"`
+
+You can use your prefered LLM, the code use openai compatible endpoints. 
 
 > [!IMPORTANT]
 > Make sure your LLM have a context big enogh for the input and output of the query
