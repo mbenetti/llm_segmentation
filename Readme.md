@@ -20,7 +20,7 @@ Create a `.env` file in the root directory of the project with the following var
 1. Place your PDF files in the `input` folder.
 2. Run the script:
    
-`python 03_segmentation.py`
+`python 00_segmentation.py`
 
 3. The processed markdown and JSON files will be saved in the `output` folder. This is an intermediate step before the final segmentation based on the llm output.
 
