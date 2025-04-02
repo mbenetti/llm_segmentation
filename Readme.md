@@ -27,7 +27,7 @@ Create a `.env` file in the root directory of the project with the following var
    <img width="1233" alt="Screenshot 2025-03-26 at 16 00 55" src="https://github.com/user-attachments/assets/5f90d565-b507-4370-a38c-c4753bab6ea3" />
 
 
-5. Run the script `01_index_creation_Lance.py` to create the index, and two output files, the langchain documents and an excel file with the chuncks and metadata.
+5. Execute `01_index_creation_Lance.py` to generate the index, Langchain documents, and an Excel file containing chunks and metadata. This script processes markdown files in the input folder, using the LLM to create a JSON representation of the document structure. The script then employs this JSON, combined with fuzzy search, to reliably and consistently segment the document based on header locations. This approach contrasts with directly segmenting the contract using the LLM; instead, the LLM provides the document's structure, which a regex and fuzzy logic engine then use for segmentation.
 
 The metadata is hard coded but it can be modified.
 
