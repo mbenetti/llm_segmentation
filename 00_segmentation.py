@@ -17,12 +17,12 @@ load_dotenv()
 # Define input and output folders
 input_folder = "input"
 output_folder = "output"
-
+export_folder = "exports"
 # Ensure the output folder exists
 os.makedirs(output_folder, exist_ok=True)
 
 # Define log file
-log_file = os.path.join(output_folder, "processing_log.txt")
+log_file = os.path.join(export_folder, "processing_log.txt")
 
 # Function to structure the paper content
 def structured_paper(paper):
