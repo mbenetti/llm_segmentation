@@ -10,9 +10,6 @@ import lancedb
 import pandas as pd
 
 #%% # Ollama Configuration
-# OLLAMA_BASE_URL = "http://mtm-llm-uk.uksouth.cloudapp.azure.com:11435/"
-# OLLAMA_MODEL = "bge-m3:567m-fp16"
-
 OLLAMA_BASE_URL = "http://localhost:11434/"
 OLLAMA_MODEL = "bge-m3"
 
