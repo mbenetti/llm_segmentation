@@ -1,6 +1,6 @@
 from openai import OpenAI
 from pydantic import BaseModel, Field
-from typing import List, Dict
+from typing import List, Dict, Tuple
 import json
 import instructor
 import time
@@ -33,8 +33,7 @@ def structured_paper(paper):
         Authors: List[str] = Field(description="List of authors as they are mentioned")
         Abstract: str = Field(description="Extract the Abstract of the paper as is or create a brief summary")
         Keywords: List[str] = Field(description="List of keywords as they are mentioned")
-        OriginalSections: List[str] = Field(description="List of original section titles as they are mentioned")
-        Sections: List[Dict] = Field(description="List of sections with title, content, start_index, and end_index")
+        Sections: List[Tuple[str, str]] = Field(description="List of sections. Each item is a tuple where the first element is the section title (header) and the second element is the complete text content of that section, excluding the title itself.")
 
     client = instructor.patch(
         OpenAI(
@@ -51,8 +50,12 @@ def structured_paper(paper):
             {
                 "role": "user",
                 "content": f"""
-                Return the extracted information from this document:
-                {paper}.
+                Extract the Title, Authors, Abstract, and Keywords from the following document.
+                Also, extract the Sections. For each section, provide its title (header) and its complete text content, EXCLUDING the title itself from the content.
+                Return the sections as a list of tuples, where each tuple is (section_title, section_content_without_title).
+
+                Document:
+                {paper}
                 """
             }
         ],
@@ -60,46 +63,12 @@ def structured_paper(paper):
         max_retries=1
     )
 
-    # Extract sections using fuzzy matching
-    sections = []
-    current_section = None
-    for line in paper.split('\n'):
-        if line.strip().isupper():
-            # Use fuzzy matching to find the closest section title
-            closest_match, score = process.extractOne(line.strip(), resp.OriginalSections, score_cutoff=80)
-            if closest_match:
-                if current_section:
-                    sections.append(current_section)
-                current_section = {
-                    "title": closest_match,
-                    "content": line,
-                    "start_index": paper.index(line),
-                    "end_index": None
-                }
-        elif current_section:
-            current_section["content"] += "\n" + line
-
-    if current_section:
-        current_section["end_index"] = paper.index(current_section["content"]) + len(current_section["content"])
-        sections.append(current_section)
-
-    # Ensure all original sections are included
-    for section in resp.OriginalSections:
-        if section not in [s["title"] for s in sections]:
-            sections.append({
-                "title": section,
-                "content": "",
-                "start_index": None,
-                "end_index": None
-            })
-
     return Layout(
         Title=resp.Title,
         Authors=resp.Authors,
         Abstract=resp.Abstract,
         Keywords=resp.Keywords,
-        OriginalSections=resp.OriginalSections,
-        Sections=sections
+        Sections=resp.Sections # Directly use the sections from the LLM response
     )
 
 # List all PDF files in the input folder

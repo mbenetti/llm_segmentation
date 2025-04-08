@@ -1,0 +1,2 @@
+[2025-04-08 15:44:20] Error processing BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: Error code: 400 - {'error': {'message': 'you must provide a model parameter', 'type': 'invalid_request_error', 'param': None, 'code': None}}
+[2025-04-08 15:44:21] Error processing A Data Quality Framework For Small Business.md: Error code: 400 - {'error': {'message': 'you must provide a model parameter', 'type': 'invalid_request_error', 'param': None, 'code': None}}
