@@ -41,18 +41,37 @@ def structured_paper(paper: str, llm_output: Dict) -> Dict:
 
     # Segment the document based on section indices
     segmented_sections = []
-    for i, (section, start_index, end_index) in enumerate(section_indices):
-        if i < len(section_indices) - 1:
-            next_section_start_index = section_indices[i + 1][1]
-        else:
-            next_section_start_index = len(paper)
-
-        content = paper[start_index:next_section_start_index].strip()
+    if section_indices:
+        # Add the header section
+        header_content = paper[:section_indices[0][1]].strip()
         segmented_sections.append(Section(
-            title=section,
-            content=content,
-            start_index=start_index,
-            end_index=next_section_start_index
+            title="Header",
+            content=header_content,
+            start_index=0,
+            end_index=section_indices[0][1]
+        ))
+
+        # Add the rest of the sections
+        for i, (section, start_index, end_index) in enumerate(section_indices):
+            if i < len(section_indices) - 1:
+                next_section_start_index = section_indices[i + 1][1]
+            else:
+                next_section_start_index = len(paper)
+
+            content = paper[start_index:next_section_start_index].strip()
+            segmented_sections.append(Section(
+                title=section,
+                content=content,
+                start_index=start_index,
+                end_index=next_section_start_index
+            ))
+    else:
+        # If no sections are found, the entire document is the header
+        segmented_sections.append(Section(
+            title="Header",
+            content=paper,
+            start_index=0,
+            end_index=len(paper)
         ))
 
     # Create the structured layout

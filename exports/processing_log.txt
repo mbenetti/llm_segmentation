@@ -1,3 +1,8 @@
-[2025-04-07 20:11:45] Error processing BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: Error code: 400 - {'error': {'message': 'you must provide a model parameter', 'type': 'invalid_request_error', 'param': None, 'code': None}}
-[2025-04-07 20:13:15] Successfully processed: BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md
-[2025-04-07 20:28:03] Error processing BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: Error code: 400 - {'error': {'message': 'you must provide a model parameter', 'type': 'invalid_request_error', 'param': None, 'code': None}}
+[2025-04-08 10:08:43] Error processing BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: Error code: 401 - {'message': 'Unauthorized', 'request_id': '8cf92c42cff3d31c18b20c4a85d21750'}
+[2025-04-08 10:08:43] Error processing A Data Quality Framework For Small Business.md: Error code: 401 - {'message': 'Unauthorized', 'request_id': '80aa5f4d6fa68f75f2510a73a90f9c72'}
+[2025-04-08 10:10:08] Error processing BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: Error code: 401 - {'message': 'Unauthorized', 'request_id': '84f5257f0a559669877f830d124eb15e'}
+[2025-04-08 10:10:08] Error processing A Data Quality Framework For Small Business.md: Error code: 401 - {'message': 'Unauthorized', 'request_id': '117b7963408ed159c61c6147b7995174'}
+[2025-04-08 10:12:36] Error processing BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: Error code: 401 - {'message': 'Unauthorized', 'request_id': '4fe19d4ddb75b57b854b404b3b291f06'}
+[2025-04-08 10:12:36] Error processing A Data Quality Framework For Small Business.md: Error code: 401 - {'message': 'Unauthorized', 'request_id': 'f1bfec4caaa1204f2be31d6380e9ce78'}
+[2025-04-08 10:13:24] Successfully processed: BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md
+[2025-04-08 10:13:27] Successfully processed: A Data Quality Framework For Small Business.md

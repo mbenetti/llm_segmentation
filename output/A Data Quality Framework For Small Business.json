@@ -1,0 +1,23 @@
+{
+  "Title": "A DATA QUALITY FRAMEWORK FOR SMALL BUSINESSES",
+  "Authors": [
+    "Peggy Leonowich-Graham",
+    "Mary Jane Willshire"
+  ],
+  "Abstract": "Data quality, while important, is often not a priority because it must compete for limited corporate resources. However, it is essential, especially for small businesses, to have a low cost method to address data quality issues. The focus of this research is to use process improvement to extend an existing theoretical model, Total Data Quality Management, TDQM, to a new field of practice that could be used by small businesses. This study modified TDQM to create a framework that is less resource intensive and more cost effective. The goal of this research is to make data quality attainable for small companies.",
+  "Keywords": [
+    "Data Quality",
+    "Information Quality",
+    "TDQM",
+    "Information Product"
+  ],
+  "Sections": [
+    "INTRODUCTION",
+    "HOW MUCH QUALITY",
+    "TDQM",
+    "SMALL BUSINESS QUALITY FRAMEWORK, SBQF",
+    "Application of SBQF in a Small Company",
+    "CONCLUSION",
+    "REFERENCES"
+  ]
+}

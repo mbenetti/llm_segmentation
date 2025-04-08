@@ -6,6 +6,10 @@ import json
 import instructor
 import time
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def structured_paper(paper):
     class Layout(BaseModel):
@@ -17,14 +21,14 @@ def structured_paper(paper):
 
     client = instructor.patch(
         OpenAI(
-            base_url="https://codestral.mistral.ai/v1",
-            api_key = "K4WxjJyPfHirNaydm99Cdja8duqVbica"
+            base_url=os.getenv("OPENAI_BASE_URL"),
+            api_key=os.getenv("OPENAI_API_KEY")
         ),
         mode=instructor.Mode.JSON,
     )
 
     resp = client.chat.completions.create(
-        model="codestral-latest",
+        model=os.getenv("OPENAI_MODEL"),
         temperature = 0,
         messages=[
             {
@@ -84,4 +88,3 @@ for file_name in tqdm(unprocessed_files, desc="Processing papers"):
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             log.write(f"[{timestamp}] Error processing {file_name}: {str(e)}\n")
 
-# %%

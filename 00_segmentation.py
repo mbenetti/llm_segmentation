@@ -1,4 +1,3 @@
-#%%
 from openai import OpenAI
 from pydantic import BaseModel, Field
 from typing import List
@@ -18,8 +17,10 @@ load_dotenv()
 input_folder = "input"
 output_folder = "output"
 export_folder = "exports"
+
 # Ensure the output folder exists
 os.makedirs(output_folder, exist_ok=True)
+os.makedirs(export_folder, exist_ok=True)
 
 # Define log file
 log_file = os.path.join(export_folder, "processing_log.txt")
@@ -112,5 +113,4 @@ for file_name in tqdm(unprocessed_files, desc="Processing papers"):
         with open(log_file, "a") as log:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             log.write(f"[{timestamp}] Error processing {file_name}: {str(e)}\n")
-
-# %%
+            
