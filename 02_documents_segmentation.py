@@ -18,19 +18,33 @@ class Layout(BaseModel):
     Authors: List[str] = Field(description="List of authors as they are mentioned")
     Abstract: str = Field(description="Extract the Abstract of the paper as is or create a brief summary")
     Keywords: List[str] = Field(description="List of keywords as they are mentioned")
-    OriginalSections: List[str] = Field(description="List of original section titles as they are mentioned")
-    Sections: List[Section] = Field(description="List of sections with their titles, content, and boundaries")
+    OriginalSections: List[str] = Field(description="List of original section titles as they are mentioned, exclude main title")
+    Sections: List[Section] = Field(description="List of sections titles, content, and boundaries")
 
 # Function to structure a paper based on LLM output
 def structured_paper(paper: str, llm_output: Dict) -> Dict:
     # Extract sections from LLM output
     sections = llm_output["Sections"]
+
+    # Extract original sections from the paper text
+    original_sections = []
+    for line in paper.split('\n'):
+        if line.strip().isupper():
+            original_sections.append(line.strip())
+
+    # Find the header by searching for the first line that starts with the section text
+    header_content = ""
+    for line in paper.split('\n'):
+        if line.strip().startswith(original_sections[0]):
+            break
+        header_content += line + "\n"
+
     # Create regex patterns for each section
-    section_patterns = {section: re.compile(re.escape(section), re.IGNORECASE) for section in sections}
+    section_patterns = {section: re.compile(re.escape(section), re.IGNORECASE) for section in original_sections}
 
     # Find indices of each section in the paper
     section_indices = []
-    for section in sections:
+    for section in original_sections:
         pattern = section_patterns[section]
         match = pattern.search(paper)
         if match:
@@ -43,15 +57,14 @@ def structured_paper(paper: str, llm_output: Dict) -> Dict:
     segmented_sections = []
     if section_indices:
         # Add the header section
-        header_content = paper[:section_indices[0][1]].strip()
         segmented_sections.append(Section(
             title="Header",
-            content=header_content,
+            content=header_content.strip(),
             start_index=0,
             end_index=section_indices[0][1]
         ))
 
-        # Add the rest of the sections
+        # Add the rest of the sections in the correct order
         for i, (section, start_index, end_index) in enumerate(section_indices):
             if i < len(section_indices) - 1:
                 next_section_start_index = section_indices[i + 1][1]
@@ -80,7 +93,7 @@ def structured_paper(paper: str, llm_output: Dict) -> Dict:
         Authors=llm_output["Authors"],
         Abstract=llm_output["Abstract"],
         Keywords=llm_output["Keywords"],
-        OriginalSections=sections,
+        OriginalSections=original_sections,
         Sections=segmented_sections
     )
 

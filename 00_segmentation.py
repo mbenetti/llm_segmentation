@@ -1,6 +1,6 @@
 from openai import OpenAI
 from pydantic import BaseModel, Field
-from typing import List
+from typing import List, Dict
 import json
 import instructor
 import time
@@ -9,6 +9,7 @@ import os
 from datetime import datetime
 import pymupdf4llm
 from dotenv import load_dotenv
+from fuzzywuzzy import process
 
 # Load environment variables from .env file
 load_dotenv()
@@ -32,7 +33,8 @@ def structured_paper(paper):
         Authors: List[str] = Field(description="List of authors as they are mentioned")
         Abstract: str = Field(description="Extract the Abstract of the paper as is or create a brief summary")
         Keywords: List[str] = Field(description="List of keywords as they are mentioned")
-        Sections: List[str] = Field(description="Title of every section of the paper. Decide what a section is based on the amount of text and if it makes sense to break the document there")
+        OriginalSections: List[str] = Field(description="List of original section titles as they are mentioned")
+        Sections: List[Dict] = Field(description="List of sections with title, content, start_index, and end_index")
 
     client = instructor.patch(
         OpenAI(
@@ -57,7 +59,48 @@ def structured_paper(paper):
         response_model=Layout,
         max_retries=1
     )
-    return resp
+
+    # Extract sections using fuzzy matching
+    sections = []
+    current_section = None
+    for line in paper.split('\n'):
+        if line.strip().isupper():
+            # Use fuzzy matching to find the closest section title
+            closest_match, score = process.extractOne(line.strip(), resp.OriginalSections, score_cutoff=80)
+            if closest_match:
+                if current_section:
+                    sections.append(current_section)
+                current_section = {
+                    "title": closest_match,
+                    "content": line,
+                    "start_index": paper.index(line),
+                    "end_index": None
+                }
+        elif current_section:
+            current_section["content"] += "\n" + line
+
+    if current_section:
+        current_section["end_index"] = paper.index(current_section["content"]) + len(current_section["content"])
+        sections.append(current_section)
+
+    # Ensure all original sections are included
+    for section in resp.OriginalSections:
+        if section not in [s["title"] for s in sections]:
+            sections.append({
+                "title": section,
+                "content": "",
+                "start_index": None,
+                "end_index": None
+            })
+
+    return Layout(
+        Title=resp.Title,
+        Authors=resp.Authors,
+        Abstract=resp.Abstract,
+        Keywords=resp.Keywords,
+        OriginalSections=resp.OriginalSections,
+        Sections=sections
+    )
 
 # List all PDF files in the input folder
 pdf_files = [f for f in os.listdir(input_folder) if f.endswith('.pdf')]
@@ -113,4 +156,3 @@ for file_name in tqdm(unprocessed_files, desc="Processing papers"):
         with open(log_file, "a") as log:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             log.write(f"[{timestamp}] Error processing {file_name}: {str(e)}\n")
-            
