@@ -1,5 +1,8 @@
 # Document Segmentation Script
 
+<img width="1402" alt="Screenshot 2025-04-08 at 16 16 45" src="https://github.com/user-attachments/assets/fc726b46-6bbd-4780-a35f-0451dbed7f9a" />
+
+
 This script processes PDF documents, converts them to Markdown, and then uses a Large Language Model (LLM) via the `instructor` library to extract structured information, including metadata and section content.
 
 ## Dependencies
