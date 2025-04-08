@@ -10,6 +10,7 @@ from datetime import datetime
 import pymupdf4llm
 from dotenv import load_dotenv
 from fuzzywuzzy import process
+import pandas as pd
 
 # Load environment variables from .env file
 load_dotenv()
@@ -33,6 +34,7 @@ def structured_paper(paper):
         Authors: List[str] = Field(description="List of authors as they are mentioned")
         Abstract: str = Field(description="Extract the Abstract of the paper as is or create a brief summary")
         Keywords: List[str] = Field(description="List of keywords as they are mentioned")
+        Header: str = Field(description="All text content from the beginning of the document up to the start of the first identified section title.")
         Sections: List[Tuple[str, str]] = Field(description="List of sections. Each item is a tuple where the first element is the section title (header) and the second element is the complete text content of that section, excluding the title itself.")
 
     client = instructor.patch(
@@ -50,9 +52,13 @@ def structured_paper(paper):
             {
                 "role": "user",
                 "content": f"""
-                Extract the Title, Authors, Abstract, and Keywords from the following document.
-                Also, extract the Sections. For each section, provide its title (header) and its complete text content, EXCLUDING the title itself from the content.
-                Return the sections as a list of tuples, where each tuple is (section_title, section_content_without_title).
+                Extract the following information from the document provided below:
+                1. Title: The main title of the document.
+                2. Authors: A list of author names.
+                3. Abstract: The abstract section or a brief summary if no abstract exists.
+                4. Keywords: A list of keywords, if mentioned.
+                5. Header: All text content starting from the beginning of the document up to (but not including) the title/header of the very first section. This might include introductory paragraphs, affiliations, dates, etc., that appear before formal sections begin. If there's no text before the first section, return an empty string for the Header.
+                6. Sections: A list of sections. For each section, provide its title (header) and its complete text content, EXCLUDING the title/header itself from the content. Return the sections as a list of tuples, where each tuple is (section_title, section_content_without_title).
 
                 Document:
                 {paper}
@@ -68,7 +74,8 @@ def structured_paper(paper):
         Authors=resp.Authors,
         Abstract=resp.Abstract,
         Keywords=resp.Keywords,
-        Sections=resp.Sections # Directly use the sections from the LLM response
+        Header=resp.Header, # Add this line
+        Sections=resp.Sections
     )
 
 # List all PDF files in the input folder
@@ -97,7 +104,7 @@ unprocessed_files = [
     f for f in os.listdir(output_folder) if f.endswith(".md")
     and not os.path.exists(os.path.join(output_folder, f.replace(".md", ".json")))
 ]
-
+    
 # Add progress bar
 for file_name in tqdm(unprocessed_files, desc="Processing papers"):
     try:
@@ -111,7 +118,48 @@ for file_name in tqdm(unprocessed_files, desc="Processing papers"):
         json_file_path = os.path.join(output_folder, file_name.replace(".md", ".json"))
         with open(json_file_path, "w") as json_file:
             json_file.write(response.model_dump_json(indent=2))
-
+    
+        # --- Generate Excel file for the current document ---
+        if response.Sections: # Check if Sections list is not empty
+            try:
+                current_file_sections = []
+                for section_title, section_content in response.Sections:
+                    current_file_sections.append({
+                        "Title": section_title,
+                        "Text": section_content
+                    })
+    
+                if current_file_sections: # Ensure there's data before creating the file
+                    df = pd.DataFrame(current_file_sections)
+                    base_name = os.path.splitext(file_name)[0]
+                    excel_file_name = f"{base_name}_sections.xlsx"
+                    excel_file_path = os.path.join(export_folder, excel_file_name)
+                    df.to_excel(excel_file_path, index=False, engine='openpyxl')
+    
+                    # Log successful Excel creation for this file
+                    with open(log_file, "a") as log:
+                        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        log.write(f"[{timestamp}] Successfully generated Excel file for {file_name}: {excel_file_path}\n")
+                    print(f"Successfully created Excel file: {excel_file_path}")
+                else:
+                     # Log if no sections were extracted for this file, though response.Sections was not empty initially (edge case)
+                    with open(log_file, "a") as log:
+                        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        log.write(f"[{timestamp}] No section data extracted for Excel from {file_name}, although Sections list was present.\n")
+    
+    
+            except Exception as e:
+                # Log errors if Excel generation fails for this file
+                with open(log_file, "a") as log:
+                    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    log.write(f"[{timestamp}] Error generating Excel file for {file_name}: {str(e)}\n")
+                print(f"\nError generating Excel file for {file_name}: {str(e)}")
+        else:
+            # Log if no sections were found in the response for this file
+            with open(log_file, "a") as log:
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                log.write(f"[{timestamp}] No sections found in response for {file_name} to generate Excel file.\n")
+    
         # Log successful processing
         with open(log_file, "a") as log:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -125,3 +173,5 @@ for file_name in tqdm(unprocessed_files, desc="Processing papers"):
         with open(log_file, "a") as log:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             log.write(f"[{timestamp}] Error processing {file_name}: {str(e)}\n")
+
+print("\nProcessing complete.")

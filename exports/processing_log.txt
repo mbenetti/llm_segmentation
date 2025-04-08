@@ -1,2 +1,11 @@
-[2025-04-08 15:44:20] Error processing BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: Error code: 400 - {'error': {'message': 'you must provide a model parameter', 'type': 'invalid_request_error', 'param': None, 'code': None}}
-[2025-04-08 15:44:21] Error processing A Data Quality Framework For Small Business.md: Error code: 400 - {'error': {'message': 'you must provide a model parameter', 'type': 'invalid_request_error', 'param': None, 'code': None}}
+[2025-04-08 15:49:43] Successfully processed: BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md
+[2025-04-08 15:50:07] Successfully processed: A Data Quality Framework For Small Business.md
+[2025-04-08 15:54:16] Successfully processed: BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md
+[2025-04-08 15:54:43] Successfully processed: A Data Quality Framework For Small Business.md
+[2025-04-08 16:02:13] Successfully processed: BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md
+[2025-04-08 16:02:38] Successfully processed: A Data Quality Framework For Small Business.md
+[2025-04-08 16:02:39] Successfully generated Excel file: exports/all_sections.xlsx
+[2025-04-08 16:11:14] Successfully generated Excel file for BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: exports/BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1)_sections.xlsx
+[2025-04-08 16:11:14] Successfully processed: BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md
+[2025-04-08 16:11:41] Successfully generated Excel file for A Data Quality Framework For Small Business.md: exports/A Data Quality Framework For Small Business_sections.xlsx
+[2025-04-08 16:11:41] Successfully processed: A Data Quality Framework For Small Business.md

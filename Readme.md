@@ -1,41 +1,57 @@
+# Document Segmentation Script
+
+This script processes PDF documents, converts them to Markdown, and then uses a Large Language Model (LLM) via the `instructor` library to extract structured information, including metadata and section content.
+
 ## Dependencies
 
-You can install the dependencies using the `requirements_segmentation.txt` file:
+Install the required Python packages using the `requirements.txt` file:
 
-`pip install -r requirements_segmentation.txt`
+```bash
+pip install -r requirements.txt
+```
 
 ## Environment Variables
 
 Create a `.env` file in the root directory of the project with the following variables:
 
-`OPENAI_API_KEY="xxx"`
-
-`OPENAI_BASE_URL="http://Your_prefered_Openai_compatible_LLM.com/v1"`
-
-
+```dotenv
+OPENAI_API_KEY="YOUR_API_KEY_HERE"
+OPENAI_BASE_URL="YOUR_OPENAI_API_BASE_URL_HERE" # e.g., http://localhost:11434/v1 or https://api.openai.com/v1
+OPENAI_MODEL="YOUR_MODEL_NAME_HERE" # e.g., llama3, gpt-4-turbo
+```
 
 > [!IMPORTANT]
-> You can use your prefered LLM, the code use langchain openai implementation that can be used with almost any LLM. 
-> Make sure your LLM have a context big enogh for the input and output of the query. The context windows of an LLM is the imput plus the output tokens.
+> You can use your preferred OpenAI-compatible LLM endpoint. The code uses the `openai` library's client, which can be configured to point to various compatible APIs. Ensure the chosen LLM has a sufficiently large context window to handle the input document and the structured JSON output.
 
 ## Usage
 
-1. Place your PDF files in the `input` folder.
-2. Run the scripts:
-   
-`python 00_segmentation.py`
+1.  Place your PDF files in the `input` folder.
+2.  Ensure your `.env` file is correctly configured with your API key, base URL, and model name.
+3.  Run the script:
 
-`python 01_processor_instructor.py`
+    ```bash
+    python segmentation.py
+    ```
 
-`python 02_documents_segmentation.py`
+4.  **Output:**
+    *   For each PDF in `input`, a corresponding Markdown file (`.md`) will be created in the `output` folder (if it doesn't already exist).
+    *   For each Markdown file in `output` that hasn't been processed yet, a corresponding JSON file (`.json`) containing the structured data extracted by the LLM will be created in the `output` folder.
+    *   A log file (`exports/processing_log.txt`) tracks the processing status and any errors.
 
-1. The processed markdown and JSON files will be saved in the `output` folder. This is an intermediate step before the final segmentation based on the llm output.
+## Extracted Data Structure
 
-   <img width="1233" alt="Screenshot 2025-03-26 at 16 00 55" src="https://github.com/user-attachments/assets/5f90d565-b507-4370-a38c-c4753bab6ea3" />
+The script instructs the LLM to extract the following fields, which are saved in the output JSON file:
 
+*   `Title`: The main title of the document.
+*   `Authors`: A list of author names.
+*   `Abstract`: The abstract section or a brief summary.
+*   `Keywords`: A list of keywords, if mentioned.
+*   `Header`: All text content from the beginning of the document up to the start of the first identified section title.
+*   `Sections`: A list of tuples. Each tuple contains:
+    *   The section title (string).
+    *   The full text content of that section, excluding the title itself (string).
 
+This structure is defined using Pydantic in the `segmentation.py` script and can be modified to suit different document types (e.g., contracts, reports) by changing the `Layout` model and the LLM prompt.
 
-The metadata structure is hard coded but it can be modified. The field that works for papers is Title, Abstract, keywords and Sections. If you work with constracts for instance, you can request `Document type`, `Parties` or `Sections`, etc.
-
-Happy programing!
+Happy programming!
 

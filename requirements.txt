@@ -1,12 +1,11 @@
-pandas
-lancedb
 openai
 pydantic
 instructor
 tqdm
 pymupdf4llm
 python-dotenv
-fuzzywuzzy
+pandas
 langchain
 langchain_ollama
 langchain_community
+openpyxl # For Excel writing with pandas
