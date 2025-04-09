@@ -1,4 +1,0 @@
-[2025-04-09 14:28:09] Successfully generated Excel file for BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md: exports/BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1)_sections.xlsx
-[2025-04-09 14:28:09] Successfully processed: BIOAMBERINC_04_10_2013-EX-10.34-DEVELOPMENT AGREEMENT (1).md
-[2025-04-09 14:28:33] Successfully generated Excel file for A Data Quality Framework For Small Business.md: exports/A Data Quality Framework For Small Business_sections.xlsx
-[2025-04-09 14:28:33] Successfully processed: A Data Quality Framework For Small Business.md
