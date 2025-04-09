@@ -1,16 +1,13 @@
-# A DATA QUALITY FRAMEWORK FOR SMALL BUSINESSES
-
-###### (Research in Progress)
-
- Peggy Leonowich-Graham Colorado Technical University[1]
+***Proceedings of the Eighth International Conference on Information Quality (ICIQ-03)***
+# **A D ATA Q UALITY F RAMEWORK FOR S MALL B USINESSES**
+###### (Research in Progress) **Peggy Leonowich-Graham ** Colorado Technical University [1]
 
 pjleonowich@excite.com
-
-###### Mary Jane Willshire University of Portland[2]
+###### **Mary Jane Willshire ** **University of Portland [2]**
 
 willshir@up.edu
 
-**Abstract: Data quality, while important, is often not a priority because it must compete**
+**Abstract** : Data quality, while important, is often not a priority because it must compete
 for limited corporate resources. However, it is essential, especially for small businesses,
 to have a low cost method to address data quality issues. The focus of this research is to
 use process improvement to extend an existing theoretical model, Total Data Quality
@@ -19,9 +16,9 @@ This study modified TDQM to create a framework that is less resource intensive a
 more cost effective. The goal of this research is to make data quality attainable for small
 companies.
 
-**Key Words: Data Quality, Information Quality, TDQM, Information Product**
+**Key Words** : Data Quality, Information Quality, TDQM, Information Product
+## **I NTRODUCTION **
 
-## INTRODUCTION
 Every day around the nation, company management makes decisions that are based on the data in their systems.
 However, what method is used to keep the data quality to an acceptable standard? Decisions made based on poor
 data quality can be costly to an organization [4]. Information technology enables companies to deliver quality
@@ -36,16 +33,19 @@ specifically targets the problems faced by a small company that would like to ha
 improving its data quality. The remainder of this paper discusses the existing data quality model, TDQM, with our
 proposed modified, lower cost model, the Small Business Quality Framework, SBQF. Each model is presented and
 then a cost comparison is shown.
-
-## HOW MUCH QUALITY
+## **H OW MUCH Q UALITY**
 
 1 Peggy Leonowich-Graham, Colorado Technical University, 4435 N. Chestnut Street, Colorado Springs, CO
 80907.
 2 Mary Jane Willshire, School of Engineering, University of Portland, 5000 N Willamette Blvd., Portland, OR
 97203.
 
+239
+
 
 -----
+
+***Proceedings of the Eighth International Conference on Information Quality (ICIQ-03)***
 
 In determining how much quality is needed there needs to be an agreement to the definition of data quality. Ken Orr
 defined data quality as the measure of agreement between the data views presented by an information system and
@@ -75,12 +75,13 @@ sufficient data quality becomes a choice. The following 4 step process was used 
 been achieved:
 
 1. It has sufficient benefits
+
 2. It has no critical problems
 3. The benefits sufficiently outweigh the problems
 4. In the present situation, and all things considered, further improvement would be more harmful than
 helpful [1].
+## **TDQM **
 
-## TDQM
 Total Data Quality Management, TDQM, is a method to deliver high quality information products, IP, to
 information consumers [9]. The field of product manufacturing has an extensive body of Total Quality
 Management, TQM, literature with principles, guidelines and techniques for product quality [3]. In TQM literature,
@@ -102,8 +103,12 @@ They are applied along IQ dimensions according to requirements specified by the 
 
 TDQM is extremely resource intensive and there is no guarantee that there will be a significant return on the
 
+240
+
 
 -----
+
+***Proceedings of the Eighth International Conference on Information Quality (ICIQ-03)***
 
 investment. Like commissioning an internal audit, TDQM only adds value if it finds repairable problems with the
 data quality. If no problems are found, the money expended can only be justified as providing ‘peace of mind’. A
@@ -117,8 +122,8 @@ luxury. While a business may be small in employee size or annual revenue, that d
 structure is comparable. In many cases the opposite is true; the small company’s information structure and database
 size are just as large as that of any Fortune 500 company. The small company is equally at data quality risk as that
 of the Fortune 500 company.
+## **S MALL B USINESS Q UALITY F RAMEWORK, SBQF **
 
-## SMALL BUSINESS QUALITY FRAMEWORK, SBQF 
 TDQM is a resource intensive commitment and well outside the resources available in a small organization.
 Further, TDQM assumes that the organization will change their Information Product or Information Production
 Method as a result of the TDQM process. Therefore, a significant portion of the business sector (small business
@@ -161,8 +166,12 @@ are accuracy, objectivity, believability, reputation, access, security, relevanc
 amount of data, interpretability, ease of understanding, concise representation, consistent representation and ease of
 manipulation. Next the expert team defines the sixteen IQ dimensions as they apply to the specific domain and to
 
+241
+
 
 -----
+
+***Proceedings of the Eighth International Conference on Information Quality (ICIQ-03)***
 
 the information product. The expert team develops a survey using these definitions. A two part survey is
 distributed to a sample of the product’s population. The first part of the survey uses the refined definitions and the
@@ -177,8 +186,8 @@ training to the population. The IQ survey is also written in the product specifi
 administered to a sample of the population. This further reduces the number of individuals in the quality review
 process. Limiting the number of personnel involved in the review process is important to small businesses due to
 resource limitations.
+#### ***Application of SBQF in a Small Company ***
 
-#### Application of SBQF in a Small Company
 The Small Business Quality Framework was applied to a non-profit Mental Health Agency in Colorado. The
 organization employs 300 people and treats mental health and substance abuse problems in Colorado. As a Mental
 Health facility the organization must comply with file keeping procedures, data security requirements and State
@@ -207,8 +216,8 @@ concise representation. The CCAR tool did not capture these dimensions well.
 The second part of the survey examined whether each of the quality dimensions was important. The results of the
 survey indicated that all sixteen of the quality dimensions were important to the information product population.
 The least important of the sixteen dimensions were access, value added, and ease of manipulation.
+###### **Information Product Plan **
 
-###### Information Product Plan
 Analysis of the survey results shows that the CCAR tool had deficiencies in the area of interpretability and concise
 representation. The expert team formed a plan with recommendations on ways to correct the lack of data quality in
 these two dimensions. The recommendation on how to improve interpretability was to incorporate CCAR training
@@ -217,8 +226,12 @@ clinicians. This plan would use video clinical scenarios as a training tool. The
 would independently complete a CCAR while watching the video. Afterwards, the patient scenario would be
 discussed and the appropriate CCAR rating would be explained by the senior clinician.
 
+242
+
 
 -----
+
+***Proceedings of the Eighth International Conference on Information Quality (ICIQ-03)***
 
 The second dimension that required an improvement plan was concise representation. The expert team determined
 that the CCAR was not a good measure of a person’s psychiatric well-being. The CCAR is a measure of a point in
@@ -228,51 +241,8 @@ life. To effectively treat a patient a clinician uses the CCAR, Global Assessmen
 development of a treatment plan. The CCAR should not be used for treatment without supplemental treatment
 tools.
 
-**Activity** **Time** **Cost**
-**expended**
-**Per person**
 
-Customize the definitions 2 hours $247.74
-for the Data Quality dimensions
 
-Develop the survey 1 hour $123.87
-Conduct survey (assume 43 people, 0.5 hour $292.77
-each
-taking about 30 minutes)
-
-Analyze the survey results 1 hours $123.87
-**Total costs** **$788.25**
-###### Table 1. Actual Costs 
- Cost of SBQF
-As can be seen in Table 1, the SBQF method was a low cost approach to examining quality. The method cost the
-organization under $800 to examine the quality of the CCAR and formulate an action plan to correct the
-deficiencies found. No new personnel positions were created or hired for the process. We expect that other small
-organizations would see a similar sort of expenses associated with the SBQF approach.
-
-**Activity** **Time** **Cost**
-**expended**
-**Per person**
-
-TDQM Expert (either new hire or dedicate existing person) $75,000
-Cost to train all personnel (322 people) 1 hour $4,000
-Conduct survey (assume 322 people, each 0.5 hour $2000
-taking about 30 minutes)
-
-Analyze the survey results (cost incorporated into expert’s $0
-salary)
-
-**Total costs** **$81,000**
-###### Table 2. Estimated Costs 
- Estimated Cost of TDQM
-As can be seen in Table 2, the estimated cost of TDQM was significantly higher. The anticipated cost for this
-approach was $81,000. A TDQM champion trains and surveys the entire population. It is a comprehensive
-examination of quality.
-
-## CONCLUSION
-The SBQF approach provided a means for a small organization to examine data quality. The framework allowed
-the small Mental Health facility to identify two problem dimensions in their information product, the CCAR. The
-small team of experts were able to make recommendations to address the data quality issues. We feel that SBQF is
-a low cost method that could be used to identify and correct data quality in a small organization. Data quality
 
 |Activity|Time expended Per person|Cost|
 |---|---|---|
@@ -282,6 +252,16 @@ a low cost method that could be used to identify and correct data quality in a s
 |Analyze the survey results|1 hours|$123.87|
 |Total costs||$788.25|
 
+###### **Table 1. Actual Costs ** **Cost of SBQF **
+
+As can be seen in Table 1, the SBQF method was a low cost approach to examining quality. The method cost the
+organization under $800 to examine the quality of the CCAR and formulate an action plan to correct the
+deficiencies found. No new personnel positions were created or hired for the process. We expect that other small
+organizations would see a similar sort of expenses associated with the SBQF approach.
+
+
+
+
 |Activity|Time expended Per person|Cost|
 |---|---|---|
 |TDQM Expert (either new hire or dedicate existing person)||$75,000|
@@ -290,41 +270,58 @@ a low cost method that could be used to identify and correct data quality in a s
 |Analyze the survey results (cost incorporated into expert’s salary)||$0|
 |Total costs||$81,000|
 
+###### **Table 2. Estimated Costs ** **Estimated Cost of TDQM **
+
+As can be seen in Table 2, the estimated cost of TDQM was significantly higher. The anticipated cost for this
+approach was $81,000. A TDQM champion trains and surveys the entire population. It is a comprehensive
+examination of quality.
+## **C ONCLUSION**
+
+The SBQF approach provided a means for a small organization to examine data quality. The framework allowed
+the small Mental Health facility to identify two problem dimensions in their information product, the CCAR. The
+small team of experts were able to make recommendations to address the data quality issues. We feel that SBQF is
+a low cost method that could be used to identify and correct data quality in a small organization. Data quality
+
+243
+
 
 -----
+
+***Proceedings of the Eighth International Conference on Information Quality (ICIQ-03)***
 
 becomes much more attainable for small organizations through the use of SBQF. It is a versatile framework that
 uses expertise which already exists within the organization, and does not require that the IP be replaced. The next
 step in our research project is to put the recommendations into place and measure the changes in the data quality of
 the CCAR data as a result of the SBQF.
+## **R EFERENCES **
 
-## REFERENCES
-
-[1] Bach, James, “Good Enough Quality: Beyond the Buzzword,” IEE Computer Society, August 1997,
+[1] Bach, James, “Good Enough Quality: Beyond the Buzzword,” *IEE Computer Society*, August 1997,
 pp. 96-97.
 
-[2] Deming, E.W., _Out of the Crisis, Center for Advanced Engineering Study, MIT, Cambridge, MA,_
+[2] Deming, E.W., *Out of the Crisis*, Center for Advanced Engineering Study, MIT, Cambridge, MA,
 1986.
 
-[3] Huang, K., Y. Lee and R. Wang, _Quality Information and Knowledge. Prentice Hall, Upper Saddle_
+[3] Huang, K., Y. Lee and R. Wang, *Quality Information and Knowledge* . Prentice Hall, Upper Saddle
 River: N.J., 1999.
 
-[4] Knight, Bob, “The Data Pollution Problem,” Computerworld, September 28,1992, pp. 81-82.
+[4] Knight, Bob, “The Data Pollution Problem,” *Computerworld,* September 28,1992, pp. 81-82.
 
-[5] Orr, Ken, “Data Quality and Systems,” Communications of the ACM, February 1998, vol. 41, issue 2,
+[5] Orr, Ken, “Data Quality and Systems,” *Communications of the ACM*, February 1998, vol. 41, issue 2,
 pp. 66-71.
 
-[6] Pipino, Leo L., Yang W. Lee, and Richard Wang, “Data Quality Assessment,” Communications of the
-_ACM, April 2002, pp. 211-218._
+[6] Pipino, Leo L., Yang W. Lee, and Richard Wang, “Data Quality Assessment,” *Communications of the*
+*ACM*, April 2002, pp. 211-218.
 
-[7] Redman, Thomas C., “What Those Who Know Quality Need to Understand,” Proceedings of the 55[th]
-_Annual Quality Conference, May 2001, pp. 534-538._
+[7] Redman, Thomas C., “What Those Who Know Quality Need to Understand,” *Proceedings of the 55* *[th]*
+*Annual Quality Conference,* May 2001, pp. 534-538.
 
-[8] Wang, R. and D. Strong, “Beyond Accuracy: What Data Quality Means to Data Consumers,” Journal
-_of Management Information Systems, Spring 1996, pp. 5-34._
+[8] Wang, R. and D. Strong, *“* Beyond Accuracy: What Data Quality Means to Data Consumers,” *Journal*
+*of Management Information Systems,* Spring 1996, pp. 5-34.
 
-[9] Wang, R., “A Product Perspective on Total Data Quality Management,” Communications of the ACM,
+[9] Wang, R., “A Product Perspective on Total Data Quality Management,” *Communications of the ACM,*
 February 1998, pp. 58-65.
+
+244
 
 
 -----

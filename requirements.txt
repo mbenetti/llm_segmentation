@@ -9,3 +9,4 @@ langchain
 langchain_ollama
 langchain_community
 openpyxl # For Excel writing with pandas
+fuzzywuzzy

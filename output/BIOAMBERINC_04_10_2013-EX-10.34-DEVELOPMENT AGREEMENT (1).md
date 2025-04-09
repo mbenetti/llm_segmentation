@@ -8,11 +8,9 @@
 
 **and 203.406**
 
-
 **DEVELOPMENT AGREEMENT**
 
-
-This Development Agreement (“Development Agreement”) is entered into on April 15, 2010 (th “EffectiveDate”) by and between Cargill,
+This Development Agreement (“Development Agreement”) is entered into on April 15, 2010 ( th “EffectiveDate”) by and between Cargill,
 Incorporated through its Bio Technology Development Center, having its principal place of business at 15407 McGinty Road West, Wayzata,
 Minnesota 55391 USA (“Cargill”) and Bioamber S.A.S., having a place of business at Route de Bazancourt, F-51110, Pomacle France (“Bioamber”).
 Bioamber and Cargill shall be referred to individually as “Party” and collectively as “Parties”, as required by text.
@@ -46,9 +44,7 @@ personnel, equipment, and material qualified and suitable to perform the Work Pl
 Cargill Confidential
 
                                                  - 1 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -90,9 +86,7 @@ confidentiality.
 Cargill Confidential
 
                                                  - 2 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -102,11 +96,11 @@ Work Plan found in Exhibit A. For purposes of clarity, payment is triggered [***
 changed according to the needs of the Work Plan and upon written agreement by the parties.
 
 Milestone Target Date Payment
-Milestone 1: Proof of Concept 12 months after Effective Date US $250,000.00
+
 Milestone 2: CB1 Strain Development 30 months after Effective Date US $300,000.00
 Milestone 3: CB1 Strain Optimization 42 months after Effective Date US $500,000.00
 
-2.4 Missed Milestones.
+2.4 Missed Milestones .
 
 2.4.1 In the event Cargill does not achieve a given Milestone provided in Section 2.3 by the Target Date listed in Section 2.3 or modified
 Milestone and modified Target Date as agreed to by the Parties, and subsequently achieves such milestone as per the criteria
@@ -125,9 +119,7 @@ Agreement equals One Million Fifty Thousand U.S. Dollars (US $1,050,000.00).
 Cargill Confidential
 
                                                  - 3 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -135,7 +127,7 @@ Cargill Confidential
 2.4.3 Provided that Cargill has respected its undertakings set out in Section 1.2 of this Development Agreement, no other damages shall
 accrue to Cargill for not achieving a given Milestone other than provided in Sections 2.4.1, 2.4.2, and 2.5.
 
-2.5 Option to Research License. In the event Cargill (i) is unable to achieve a given milestone described in Section 2.3 by the Target Date, or (ii)
+2.5 Option to Research License . In the event Cargill (i) is unable to achieve a given milestone described in Section 2.3 by the Target Date, or (ii)
 terminates this Agreement pursuant to Section 10.2, Bioamber shall have the option to obtain a license during the term of this Development
 Agreement to the patent applications and patents listed in Exhibit B (including any continuations, continued prosecutions, continuationsin-part, reissues, reexaminations, divisions or substitutions thereof) (collectively “Licensed Patents”), the tool kit listed in Exhibit C
 (“Licensed Tool Kit”), and Cargill Improvements if any (as defined in Section 5.2 below), for research use only and for additional monetary
@@ -156,21 +148,19 @@ of such Research License shall be negotiated between the Parties and shall inclu
 addressing ownership and rights to use of any intellectual property developed. Further, this Development Agreement shall serve as the
 framework for the Research License.
 
-2.6 Technology Transfer. In the event Milestone 3 is achieved, Cargill will provide up to [***] to assist in a successful transfer of the Modified
+2.6 Technology Transfer . In the event Milestone 3 is achieved, Cargill will provide up to [***] to assist in a successful transfer of the Modified
 CB1 technology to Bioamber in order to allow subsequent scale-up at the same FTE rate set forth in Section 2.2. For clarity, [***] per FTE
 per year equals US$[***] for this technology transfer).
 
 Cargill Confidential
 
                                                  - 4 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
 
-2.7 Scale-Up. Following the successful technology transfer, upon request by Bioamber and subject to Cargill’s availability of appropriate
+2.7 Scale - Up . Following the successful technology transfer, upon request by Bioamber and subject to Cargill’s availability of appropriate
 resources, Cargill will enter at its sole discretion into a services agreement with Bioamber to assist in the fermentation scale-up of using
 Modified CB1 obtained under Milestones 2 and 3 for producing succinic acid and salts thereof at a single Bioamber facility or a facility
 designated by Bioamber. Cargill shall invoice Bioamber [***] U.S. Dollars (US$[***]) per man-day provided, not inclusive of taxes or other
@@ -190,13 +180,11 @@ Target
 
 Milestone using Alternative Feedstock Date Payment
 
-Up-front Payment TBD US $[***]
 Milestone 1: Proof of Concept TBD US $[***]
 Milestone 2: CB1 Strain Development TBD US $[***]
 Milestone 3: CB1 Strain Optimization TBD US $[***]
 
-
-4. Confidentiality. To carry out the Work Plan, Cargill may receive from, and provide to, Bioamber certain Confidential Information, as defined
+4. Confidentiality . To carry out the Work Plan, Cargill may receive from, and provide to, Bioamber certain Confidential Information, as defined
 below. Such Confidential Information will be disclosed by one Party (the “Disclosing Party”) to the other Party (the “Receiving Party”) on
 the following terms and conditions:
 
@@ -216,9 +204,7 @@ Information.
 Cargill Confidential
 
                                                  - 5 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -252,9 +238,7 @@ any breach or threatened breach by the Receiving Party.
 Cargill Confidential
 
                                                  - 6 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -276,7 +260,7 @@ this Section 4.
 
 5.1 Each party shall retain ownership of all intellectual property that it owned prior to the Effective Date.
 
-5.2 Improvements. Any invention or discovery relating to the Work Plan, in whole or in part, that is conceived during the term of this
+5.2 Improvements . Any invention or discovery relating to the Work Plan, in whole or in part, that is conceived during the term of this
 Development Agreement shall be an “Improvement”. The scope for Improvements will be limited to the CB1 strain itself and the [***] (the
 “Field”), but shall exclude [***]. Bioamber will own any Improvement in the field of succinic acid and salts thereof and such Improvement
 shall be designated “Bioamber Improvements”. Cargill will own any Improvement in all fields other than the field of succinic acid and salts
@@ -298,9 +282,7 @@ and conditions of Exhibit D.
 Cargill Confidential
 
                                                  - 7 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -341,9 +323,7 @@ such suits.
 Cargill Confidential
 
                                             - 8 
-
-
-- Confidential treatment requested
+                                                    - Confidential treatment requested
 
 
 -----
@@ -366,25 +346,23 @@ stating that Bioamber has a license to the WRF Patents (“Bioamber-WRF License�
 Bioamber for Bioamber’s use of the strain commensurate with and in accordance with the Bioamber-WRF License. Cargill shall have no
 liability to Bioamber for Bioamber’s acts or failure to act with respect to the WRF Patents.
 
-7. Warranties. Except as provided in Section 1.2 of this Development Agreement, Cargill makes no representations or warranties, express or
+7. Warranties . Except as provided in Section 1.2 of this Development Agreement, Cargill makes no representations or warranties, express or
 implied, with respect to the services provided under this Development Agreement and with respect to the subject matter of this
 Development Agreement. The services are provided “as is” and Bioamber acknowledges that it bears all responsibility and accountability
 for evaluating, approving, and implementing any of results resulting from this Development Agreement.
 
-8. Indemnification. Bioamber and Cargill agree to waive any and all claims against each other for consequential, punitive, incidental, special, or
+8. Indemnification . Bioamber and Cargill agree to waive any and all claims against each other for consequential, punitive, incidental, special, or
 other forms of “exemplary” losses whether arising in contract, warranty, tort (including negligence), strict liability, or otherwise, including
 any losses relating to lost use, lost profits, lost business, damage to reputation, or lost or diminished financing unless such claims are
 based on a Party’s gross negligence or willful misconduct.
 
-9. Notices. All notices or other communication must be in writing and delivered by (a) personal delivery, (b) reputable overnight delivery
+9. Notices . All notices or other communication must be in writing and delivered by (a) personal delivery, (b) reputable overnight delivery
 service, or (c) facsimile or e-mail, confirmed under clause (a) or clause (b), and addressed in each case as set forth below:
 
 Cargill Confidential
 
                                                  - 9 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -394,10 +372,12 @@ If to Cargill: If to Bioamber:
 Cargill, Incorporated Bioamber S.A.S.
 Bio Technology Development Center 1250 Rene-Levesque West
 15285 Minnetonka Blvd. Suite 4110
+
 Minnetonka, Minnesota 55345 Montreal, Quebec
 USA Canada H3B 4W8
 
 Fax: 952-742-0540 Fax: 514-844-1414
+
 Attention: Pirkko Suominen Attention: Laurent Bernier
 
 
@@ -409,16 +389,19 @@ Wayzata, Minnesota 55391 USA
 Fax: 952-742-6349
 Attention: Bio TDC IP Lawyer
 
-10. Term and Termination.
+10. Term and Termination .
 
 
 With copy to:
 Boivin Desbiens Senécal, g.p.
 2000-2000 McGill College
 Suite 2000
+
 Montreal, QC, Canada
 H3A 3H3
+
 Fax: 514-844-5836
+
 Attention: Thomas Desbiens
 
 
@@ -431,55 +414,53 @@ hereunder. This Development Agreement shall also terminate upon mutual written a
 dispute as to whether or not Cargill has missed a certain Milestone, then the Target Date for that Milestone shall be tolled until the Parties,
 acting in good faith, have settled such dispute in writing between themselves or through an independent expert.
 
-11. Independent Contractor. Nothing in this Development Agreement is to be construed to deem the relationship between the parties to be one
+11. Independent Contractor . Nothing in this Development Agreement is to be construed to deem the relationship between the parties to be one
 of master/servant, principal/agent, or employer/employee. To the contrary, the relationship of Cargill to Bioamber is that of independent
 contractor, and Cargill will have no authority to (i) make any binding decision for, or on behalf of, Bioamber or (ii) commit Bioamber to any
 contract, obligation, debt, or other liability. None of Cargill’s employees will be deemed to be employees of Bioamber.
 
-12. Publicity. Any public statements related to work performed under this Development Agreement, including public statements related to the
+12. Publicity . Any public statements related to work performed under this Development Agreement, including public statements related to the
 existence of this Development Agreement itself, will only be made after the prior written consent of both Parties concerning timing, content,
 and audience.
 
 Cargill Confidential
 
                                              - 10 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
 
-13. Miscellaneous.
+13. Miscellaneous .
 
-13.1 Third Party Patents. In addition to the WRF Patents as described more fully in Section 6, the CB1 Team of the Bio Technology
+13.1 Third Party Patents . In addition to the WRF Patents as described more fully in Section 6, the CB1 Team of the Bio Technology
 Development Center of Cargill represents that, to the best of its knowledge as of the Effective Date, the patents and patent applications of
 third parties that could impact the Work Plan and the commercialization thereof are provided in Exhibit E (“Third Party Patents”). Cargill
 shall have no liability to Bioamber for Bioamber’s acts or failure to act with respect to such Third Party Patents. The Parties shall meet
 regularly throughout the Term of this Development Agreement to determine whether or not licenses to Third Party Patents are needed to
 perform or continue to perform the Work Plan and the next steps if such licenses are needed.
 
-13.2 Governing Law. This Development Agreement shall be governed by and construed in accordance with the laws of the State of Minnesota,
+13.2 Governing Law . This Development Agreement shall be governed by and construed in accordance with the laws of the State of Minnesota,
 United States of America, disregarding its conflicts of law rules.
 
-13.3 Assignment. Neither Party shall assign this Development Agreement or the obligations contained herein without the express written
+13.3 Assignment . Neither Party shall assign this Development Agreement or the obligations contained herein without the express written
 consent of the other Party.
 
-13.4 Waiver. The failure of either Party to insist in any one or more instances upon performance of any terms or conditions of this Development
+13.4 Waiver . The failure of either Party to insist in any one or more instances upon performance of any terms or conditions of this Development
 Agreement, is not to be construed as a waiver of future performance of any such term, covenant, or condition, but the obligations of either
 Party with respect thereto will continue in full force and effect. No waiver will be effective unless in writing and signed by the waiving
 Party.
 
-13.5 Amendment. No amendment, modification, or waiver of the terms of this Development Agreement shall be binding unless placed in writing
+13.5 Amendment . No amendment, modification, or waiver of the terms of this Development Agreement shall be binding unless placed in writing
 and duly executed by the Parties’ authorized representatives.
 
-13.6 Severability. All provisions contained herein are severable, and in the event any of them is held to be invalid by any competent court or
+13.6 Severability . All provisions contained herein are severable, and in the event any of them is held to be invalid by any competent court or
 arbitrator, this Development Agreement is to be interpreted as if such invalid provision were not contained herein.
 
-13.7 Survivability. Sections 4 (Confidentiality), 5 (Intellectual Property), 6 (WRF Patents), 7 (Warranties), 8 (Indemnification), 13.2 (Governing
+13.7 Survivability . Sections 4 (Confidentiality), 5 (Intellectual Property), 6 (WRF Patents), 7 (Warranties), 8 (Indemnification), 13.2 (Governing
 Law), and 13.7 (Survivability) will survive the expiration or earlier termination of this Development Agreement.
 
-13.8 Entire Agreement. This Development Agreement supersedes all previous understandings between Cargill and Bioamber concerning the
+13.8 Entire Agreement . This Development Agreement supersedes all previous understandings between Cargill and Bioamber concerning the
 subject matter of this Development Agreement, including but not limited to the Term Sheet executed by the Parties on December 3, 2009
 and December 4, 2009, and the Mutual Confidentiality Agreement between the Parties which was effective July 17, 2009, and, together with
 its attachments, including the Commercial License Agreement attached hereto as Exhibit D executed concurrently with this Development
@@ -487,14 +468,14 @@ Agreement, contains the entire agreement between the parties with respect to the
 or supplemented except in writing and signed by both Parties specifically referring to this Development Agreement and the Commercial
 License Agreement.
 
-13.9 Bioamber Non-Compete Commitment. Bioamber will not itself or with or through third parties engage in the development of biocatalysts
-other than E. coli for the production of succinic acid or salts thereof, except for the development activities under the terms and conditions
+13.9 Bioamber Non - Compete Commitment . Bioamber will not itself or with or through third parties engage in the development of biocatalysts
+other than *E. coli* for the production of succinic acid or salts thereof, except for the development activities under the terms and conditions
 of this Development Agreement. This obligation endures for the Term of this Development Agreement. Notwithstanding the above,
 Bioamber shall be permitted to evaluate other biocatalysts, but shall not undertake development of such biocatalysts. The purpose of such
 evaluations shall be to identify and eventually secure alternative technologies, in the event that the CB1 development program is not
 successful. As such, Bioamber shall cease within 30 days any further funding and development of a biocatalyst, including but not limited
 to the genetic modification or the optimization of fermentation conditions, when such biocatalyst has demonstrated the ability to produce
-succinic acid at a concentration above [***] grams per liter. This restriction shall apply to any succinic acid biocatalyst other than E. coli,
+succinic acid at a concentration above [***] grams per liter. This restriction shall apply to any succinic acid biocatalyst other than *E. coli*,
 be it a biocatalyst developed in-house, licensed-in, or under development at a third party lab that is funded by Bioamber or to which
 Bioamber has secured a future right or right of first refusal through direct payment, in kind contribution, grant, gift, differed payment or
 commitment to a future payment.
@@ -502,9 +483,7 @@ commitment to a future payment.
 Cargill Confidential
 
                                              - 11 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -519,10 +498,11 @@ Bio Technology Development Center
 BIOAMBER S.A.S.
 
 
-/s/ Jack Staboch /s/ Jean-François Huc
+/ s/ Ja c k Stab oc h /s/ Jean-François Huc
 Signature Signature
 
 VP BioTDC Director General
+
 Title Title
 
 4/16/10 April 15, 2010
@@ -557,7 +537,9 @@ Time to achieve: Month 42
 
 
 **Exhibit A**
+
 **Work Plan**
+
 **Milestones**
 
 Cargill Confidential
@@ -571,69 +553,51 @@ Cargill Confidential
 -----
 
 **Exhibit B**
+
 **Cargill Patents and Patent Applications**
 
-**Title** **Filing Date**
+|Publication #|Title|Filing Date|Expiration Date|
+|---|---|---|---|
+|[***]||||
 
-**[***]**
 
-**Title** **Filing Date**
+|Publication #|Title|Filing Date|Expiration Date|
+|---|---|---|---|
+|[***]||||
 
-**[***]**
 
-**Title** **Filing Date**
+|Publication #|Title|Filing Date|Expiration Date|
+|---|---|---|---|
+|[***]||||
 
-**[***]**
 
-**Title** **Filing Date**
+|Publication #|Title|Filing Date|Expiration Date|
+|---|---|---|---|
+|[***]||||
 
-**[***]**
 
-**Title** **Filing Date**
+|Publication #|Title|Filing Date|Expiration Date|
+|---|---|---|---|
+|[***]||||
 
-**[***]**
 
-**Title** **Filing Date**
+|Publication #|Title|Filing Date|Expiration Date|
+|---|---|---|---|
+|[***]||||
 
-**[***]**
+
 
 Cargill Confidential
 
-           - 14 
-|Publication #|Title|Filing Date|Expiration Date|
-|---|---|---|---|
-|[***]||||
-
-|Publication #|Title|Filing Date|Expiration Date|
-|---|---|---|---|
-|[***]||||
-
-|Publication #|Title|Filing Date|Expiration Date|
-|---|---|---|---|
-|[***]||||
-
-|Publication #|Title|Filing Date|Expiration Date|
-|---|---|---|---|
-|[***]||||
-
-|Publication #|Title|Filing Date|Expiration Date|
-|---|---|---|---|
-|[***]||||
-
-|Publication #|Title|Filing Date|Expiration Date|
-|---|---|---|---|
-|[***]||||
-
-
-
-- Confidential treatment requested
+                                      - 14 
+                                                  - Confidential treatment requested
 
 
 -----
 
 **Exhibit C**
-**Licensed Tool Kit**
 
+**Licensed Tool Kit**
 
 Basic Package
 
@@ -664,9 +628,7 @@ $[***]
 Cargill Confidential
 
                                              - 15 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
@@ -686,6 +648,7 @@ Cargill Confidential
 -----
 
 **EXHIBIT E**
+
 **Third Party Patents relating to the Work Plan**
 
 **Publication number and title** **Assignee**
@@ -701,14 +664,13 @@ Cargill Confidential
 Cargill Confidential
 
                                              - 17 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
 
 **EXHIBIT F**
+
 **Cargill’s Guiding Principles**
 
      - Cargill will comply with the laws of all countries to which it is subject.
@@ -736,9 +698,7 @@ and reporting any violations of law of Cargill policies.
 Cargill Confidential
 
                                              - 18 
-
-
-- Confidential treatment requested
+                                                        - Confidential treatment requested
 
 
 -----
